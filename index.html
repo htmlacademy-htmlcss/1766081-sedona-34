@@ -12,7 +12,7 @@
       <nav class="page-navigation">
         <!-- Логотип в хедере-->
         <a class="page-header-logo" href="index.html">
-          <img class="logo" src="" alt="Логотип сайта Седона">
+          <img class="logo" src="images/logo/sedona-logo.svg" width="139" heigh="70" alt="Логотип сайта Седона">
         </a>
         <!-- Главное меню -->
         <ul class="navigation-list">
@@ -49,9 +49,11 @@
     <main class="main-index">
       <h1 class="visually-hidden">Седона</h1>
       <!-- Приветствие -->
-      <div class="welcome">
-        <img class="welcome-image" src="" alt="Welcome to the gorgeous Sedona. &ldquo;Because the Grand Canyon sucks!&ldquor;">
-      </div>
+      <section class="welcome">
+        <div class="welcome-divider">
+          <img class="welcome-image" src="images/index/svg/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona. &ldquo;Because the Grand Canyon sucks!&ldquor;">
+        </div>
+      </section>
       <!-- Преимущества -->
       <section class="advantages">
         <!-- Шапка преимуществ -->
@@ -63,14 +65,17 @@
         <ol class="advantages-list">
           <!-- Преимущество 1 -->
           <li class="advantages-item">
-            <!-- Блок 1 -->
+            <!-- Обёртка для преимущества с изображением -->
+            <div class="view-wrapper">
+              <!-- Блок 1 -->
               <div class="advantages-block views-block">
                 <h3 class="advantages-title">Настоящий<br>городок</h3>
                 <span class="advantages-number">— №1 —</span>
                 <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <!-- Картинка 1 -->
-              <img class="advantages-photo" src="" alt="Внешний облик города Седоны">
+              <img class="advantages-photo" src="images/index/advantages-townscape.jpg" width="800" heigh="384" alt="Внешний облик города Седоны">
+            </div>
             <!-- Белые блоки с декоративными иконками -->
             <ul class="features-list">
               <li class="features-item">
@@ -95,13 +100,16 @@
           </li>
           <!-- Преимущество 2 -->
           <li class="advantages-item">
-            <!-- Картинка 2 -->
-            <img class="advantages-photo" src="" alt="Мост Дьявола">
-            <!-- Блок 2 -->
-            <div class="advantages-block views-block">
-              <h3 class="advantages-title">Там есть<br>мост дьявола</h3>
-              <span class="advantages-number">— №2 —</span>
-              <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <!-- Обёртка для преимущества с изображением -->
+            <div class="view-wrapper">
+              <!-- Картинка 2 -->
+              <img class="advantages-photo" src="images/index/advantages-devils-bridge.jpg" width="800" heigh="384" alt="Мост Дьявола">
+              <!-- Блок 2 -->
+              <div class="advantages-block views-block">
+                <h3 class="advantages-title">Там есть<br>мост дьявола</h3>
+                <span class="advantages-number">— №2 —</span>
+                <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              </div>
             </div>
           </li>
           <!-- Преимущество 3 -->
@@ -154,13 +162,13 @@
       <!-- Ссылки на социальные сети -->
       <ul class="footer-social-list">
         <li class="footer-social-item">
-          <a class="social-button" href="https://twitter.com/htmlacademy_ru">
-            <span class="visually-hidden">Твиттер</span>
+          <a class="social-button" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">ВКонтакте</span>
           </a>
         </li>
         <li class="footer-social-item">
-        <a class="social-button" href="https://www.facebook.com/htmlacademy">
-          <span class="visually-hidden">Фейсбук</span>
+        <a class="social-button" href="https://t.me/htmlacademy">
+          <span class="visually-hidden">Телеграм</span>
         </a>
         </li>
         <li class="footer-social-item">
