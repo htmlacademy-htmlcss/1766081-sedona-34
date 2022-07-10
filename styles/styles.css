@@ -18,13 +18,26 @@
 
 /* Основное */
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
   background-color: #FFFFFF;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 1200px;
   text-align: center;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .main-catalog {
@@ -45,6 +58,28 @@ body {
   text-align: left;
 }
 
+.page-navigation {
+  display: flex;
+  width: 1060px;;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.page-header-logo {
+  margin-right: 30px;
+}
+
+.navigation-list {
+  width: 500px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user {
+  width: 264px;
+  margin-left: auto;
+}
+
 .navigation-link {
   font-size: 20px;
   font-weight: 700;
@@ -54,12 +89,31 @@ body {
 
 /* Футер */
 
+.page-footer {
+  width: 1056px;
+  padding-left: 72px;
+  padding-right: 72px;
+}
+
+.footer-wrapper {
+  display: flex;
+}
+
+.footer-social-list {
+  margin-right: auto;
+}
+
+.htmlacademy-link {
+  margin-left: auto;
+}
+
 .footer-address-phone {
   font-size: 40px;
   line-height: 40px;
   font-style: normal;
   color: #000000;
   text-decoration: none; /* без подчёркивания */
+  width: 720px;
 }
 
 /* Кнопки */
@@ -113,6 +167,20 @@ body {
   line-height: 36px;
 }
 
+.catalog-pagination-current {
+ background-color: #F2F2F2;
+ color: #000000;
+}
+
+.catalog-more-button {
+  margin: 0 auto;
+  display: block;
+}
+
+.sorting-button {
+  width: 48px;
+}
+
 /* Приветствие */
 
 .welcome {
@@ -130,25 +198,42 @@ body {
   background-repeat: no-repeat;
 }
 
-/* Преимущества */
+/* СПИСОК ПРЕИМУЩЕСТВ */
+
+/* Список преимуществ: флекс-контейнеры */
+
+.view-wrapper {
+  display: flex;
+}
+
+.features-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Список преимуществ: хедер */
 
 .advantages-header-subtitle {
   line-height: 36px;
 }
 
+/* Список преимуществ: обычные блоки */
+
 .advantages-block {
+  width: 250px;
+  padding-left: 75px;
+  padding-right: 75px;
   font-size: 18px;
   line-height: 21px;
   background-color: rgba(131, 179, 211, 0.12);
-}
-
-.views-block {
-  background-color: #83B3D3;
-  color: #FFFFFF;
-}
-
-.central-block {
-  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages-title {
@@ -159,24 +244,47 @@ body {
   line-height: 28px;
 }
 
+.advantages-number {
+  display: block;
+}
+
+/* Список преимуществ: блоки с картинкой */
+
+.views-block {
+  width: 220px;
+  padding-left: 90px;
+  padding-right: 90px;
+  background-color: #83B3D3;
+  color: #FFFFFF;
+}
+
 .views-block .advantages-title {
   color: #FFFFFF
 }
 
+/* Список преимуществ: блок по центру с другим фоном */
+
+.central-block {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+/* Список преимуществ: блоки-особенности */
+
+.features-block {
+  background-repeat: no-repeat;
+}
+
 .features-housing {
   background-image: url("../images/index/svg/housing.svg");
-  background-repeat: no-repeat;
 }
 
 .features-food {
   background-color:#FFFFFF;
   background-image: url("../images/index/svg/food.svg");
-  background-repeat: no-repeat;
 }
 
 .features-souvenir {
   background-image: url("../images/index/svg/souvenir.svg");
-  background-repeat: no-repeat;
 }
 
 /* Подписка */
@@ -199,6 +307,11 @@ body {
 
 /* Фильтры каталога */
 
+.catalog-header-title {
+  font-size: 60px;
+  line-height: 78px;
+}
+
 .catalog-wrapper {
   background-color: #68A2CA;
   color: #FFFFFF;
@@ -206,4 +319,128 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: left;
+  padding-left: 71px;
+  padding-right: 72px;
+}
+
+.catalog-filter-form {
+  display: flex;
+}
+
+.catalog-filter-group {
+  margin-right: 67px;
+}
+
+.catalog-filter-price {
+  width: 287px;
+  margin-right: 81px;
+  margin-left: auto;
+}
+
+.catalog-list {
+  margin: 0px;
+  padding: 0px;
+}
+
+.catalog-filter-title {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.control-label {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.catalog-filter-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Сортировка */
+
+.sorting-wrapper {
+  display: flex;
+  width: 1057px;
+  padding-left: 71px;
+  padding-right: 72px;
+}
+
+.catalog-search-result {
+  color: #000000;
+  font-size: 30px;
+  line-height: 39px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  margin-right: 192px;
+}
+
+.catalog-sorting-form {
+  width: 287px;
+}
+
+.sorting-button-wrapper {
+  display: flex;
+  margin-left: auto;
+  justify-content: space-between;
+  width: 160px;
+}
+
+/* Каталог */
+
+.catalog-cards {
+width: 1056px;
+padding-left: 72px;
+padding-right: 72px;
+}
+
+.catalog-cards-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hotel-card {
+  width: 300px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Пагинация */
+
+.pagination-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-pagination-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-pagination-link {
+  display: inline-block;
+  width: 55px;
+  margin-right: 8px;
+}
+
+.catalog-display {
+  width: 386px;
+}
+
+/* Хлебные крошки */
+
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+  padding-right: 26px;
 }
